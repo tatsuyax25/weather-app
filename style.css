@@ -23,3 +23,19 @@ body {
     padding: .5rem;
     border-right: 2px solid hsl(200, 100%, 10%);
 }
+
+.weather-icon {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.weather-icon.large {
+    width: 80px;
+    height: 80px;
+}
+
+.header-current-temp {
+    font-size: 2rem;
+    margin-left: 1rem;
+}

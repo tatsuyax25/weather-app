@@ -13,3 +13,13 @@ body {
     display: flex;
     align-items: center;
 }
+
+.header-left {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    margin: .5rem;
+    padding: .5rem;
+    border-right: 2px solid hsl(200, 100%, 10%);
+}

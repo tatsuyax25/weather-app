@@ -8,6 +8,7 @@ getWeather(10, 10, Intl.DateTimeFormat(). resolvedOptions().timeZone).then(rende
 
 function renderWeather({ current, daily, hourly }) {
     renderCurrentWeather(current)
-    renderDailyWeather(daily)
-    renderHourlyWeather(hourly)
+    // renderDailyWeather(daily)
+    // renderHourlyWeather(hourly)
+    document.body.classList.remove("blurred")
 }

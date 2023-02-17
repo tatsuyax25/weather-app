@@ -9,7 +9,7 @@ getWeather(10, 10, Intl.DateTimeFormat(). resolvedOptions().timeZone).then(rende
 
 function renderWeather({ current, daily, hourly }) {
     renderCurrentWeather(current)
-    // renderDailyWeather(daily)
+    renderDailyWeather(daily)
     // renderHourlyWeather(hourly)
     document.body.classList.remove("blurred")
 }
@@ -32,4 +32,11 @@ function renderCurrentWeather(current) {
     setValue("current-fl-low", current.lowFeelsLike)
     setValue("current-wind", current.windSpeed)
     setValue("current-precip", current.precip)
+}
+
+const dailySection = document.querySelector("[data-day-section]")
+const dayCardTemplate = document.getElementById("day-card-template")
+function renderDailyWeather(daily) {
+    dailySection.innerHTML = ""
+    
 }
